@@ -1,0 +1,109 @@
+body{
+    background:url(../RES/img/training.jpg) rgba(0, 0, 0, 0.74);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.closebtn{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 0;
+    transition: all, 0.5s;
+}
+.closebtn span{
+    margin-left: 10px;
+    font-family: montserrat, sans-serif;
+    color: white;
+}
+.closebtn:hover{
+    margin-left: -5px;
+}
+@media(max-width:400px){
+    .closebtn span{
+        display: none;
+    }
+}
+.packages-box{
+    margin-top: 50px;
+    padding-bottom: 20;
+    margin-bottom: 30px;
+    background-color: rgba(179, 179, 179, 0.26);
+    border-radius: 20px;
+    box-shadow: 8px 8px 30px rgb(44, 149, 184);
+    padding-bottom: 30px;
+}
+
+.cource-content{
+    color: white;
+    background-color: rgba(0, 0, 255, 0.527);
+    border-radius: 10px;
+    bottom: 0;
+    height: 350px;
+    margin-bottom: 30px;
+    transition: all, 0.5s;
+}
+.cource-content:hover{
+    transform: scale(1.1);
+}
+.package-topic{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:white ;
+
+}
+.pack-title{
+    text-decoration: underline;
+    font-family: montserrat, sans-serif;
+}
+.bookbtn{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    bottom: 0;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    border: 0;
+    box-shadow: none;
+    font-family: montserrat, sans-serif;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all, 0.5s;
+}
+.bookbtn:hover{
+    color: white;
+    background-color: blue;
+    border: 2px solid white;
+}
+
+/*footer css*/
+.links i{
+    margin-left: 20px;
+    margin-top: 5px;
+    transition: all, 0.5s;
+}
+
+.links i:hover{
+    transform:scale(1.8);
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+.footerbtn{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    font-family: montserrat;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    transition: all 0.5s;
+}

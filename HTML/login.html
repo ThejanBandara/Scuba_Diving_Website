@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Scuba life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="window">
+      
+        <div class=" row justify-content-center align-items-center inner-row">
+            <div class="col-md-5">
+                <div class="login form-box">
+                    
+                    <div class="form-title">
+                        <h2 class="logintext fw-bold-mb-3">Login</h2>
+                        <a href="../HTML/Index.html" class="backlink">back</a>
+                    </div>
+                    
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email" id="Emailin">
+                            <label for="Emailin">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control form-control-sm" placeholder="password" id="passwordin">
+                            <label for="passwordin">password</label>
+                        </div>
+                        <div class="mt-3">
+                            <button onclick="success();" class="btn">Login</button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <span class="signuptext">Don't have an account? </span> <button onclick="noaccount()" class="signupbtn bg-transparent border-0">Sign Up</button>
+                    </div>
+                </div>
+
+                <div class="createacc form-box">
+                    <div class="form-title">
+                        <h2 class="logintext fw-bold-mb-3">Create Your Account</h2>
+                        <a href="../HTML/Index.html" class="backlink">back</a>
+                    </div>
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="First Name" id="firstnamein">
+                            <label for="firstnamein">first name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="last name" id="lastnamein">
+                            <label for="lastnamein">last name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email" id="Emailin">
+                            <label for="Emailin">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control form-control-sm" placeholder="password" id="passwordin">
+                            <label for="passwordin">password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control form-control-sm" placeholder="passwordconfirm" id="passwordCin">
+                            <label for="passwordCin">Confirm password</label>
+                        </div>
+                        <div class="mt-3">
+                            <button onclick="success();" class="btn">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <span class="signuptext">Already have an account? </span> <button onclick="accounthave()" class="signupbtn bg-transparent border-0">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let signup = document.querySelector(".createacc");
+        let login = document.querySelector(".login")
+        function noaccount(){
+            signup.style.display = "block";
+            login.style.display ="none";
+        }
+
+        function accounthave(){
+            signup.style.display = "none";
+            login.style.display ="block";
+        }
+        function success(){
+            alert("login/signup Successful!");
+        }
+    </script>
+</body>
+</html>

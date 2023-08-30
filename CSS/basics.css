@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.content{
+    background-color:black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.window{
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(179, 179, 179, 0.26);
+    border-radius: 20px;
+    box-shadow: 8px 8px 30px rgb(44, 149, 184);
+}
+
+.topic{
+    color: white;
+    font-family: montserrat, sans-serif;
+    padding-bottom: 30px;
+}
+
+p{
+    position: relative;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+
+.subtopic{
+    color:white;
+    font-family: montserrat, sans-serif;
+}
+
+ul li{
+    color: white;
+    line-height: 30px;
+}
+
+ul li span{
+    color: lightblue;
+    font-weight: bold;
+    font-family: montserrat, sans-serif;
+}
+.closebtn{
+    position: absolute;
+    background-color: blue;
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+    border: 0;
+    color: white;
+    font-family: montserrat, sans-serif;
+    margin-top: 10px;
+    margin-left: 30px;
+    transition: all, 0.5s;
+}
+.closebtn i{
+    padding-right: 5px;
+}
+.closebtn:hover{
+    font-weight: bold;
+    color: blue;
+    background-color: white;
+    padding-left: 0;
+}
+
+@media(max-width:1200px){
+
+    .topic{
+        margin-top: 65px;
+    }
+
+}

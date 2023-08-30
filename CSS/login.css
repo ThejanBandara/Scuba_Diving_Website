@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.inner-row{
+    height: 100vh;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: white;
+    color: blue;
+    font-weight:700;
+}
+.logintext{
+    color: white;
+}
+.signupbtn{
+    color: rgb(193, 187, 209);
+}
+.signuptext{
+    color: white;
+}
+.form-box{
+    background-color: rgba(255, 255, 255, 0.301);
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+.createacc{
+  display: none;
+}
+
+.close{
+    display: block;
+
+}
+.backlink{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: right;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,137 @@
+
+body{
+    height: 100vh;
+    background:url(../RES/img/pexels-yulianto-poitier-1231365.jpg) rgba(0, 0, 0, 0.836);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+
+}
+.hiring {
+    padding-top: 300px;
+    min-height: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+.window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 30px 30px 30px;
+    background: rgb(83, 82, 82);
+    border-radius: 30px;
+    box-shadow: 8px 8px 30px rgb(44, 149, 184);
+}
+@media(max-width:768px){
+    .window{
+        margin-top: 170px;
+    }
+    .footerc{
+        margin-top  : 350px;
+    }
+}
+
+.closebtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: transparent;
+    border: 0;
+    transition: all, 0.5s;
+}
+.closebtn span{
+    margin-left: 10px;
+    font-family: montserrat, sans-serif;
+    color: white;
+}
+.closebtn:hover{
+    margin-left: 10px;
+}
+@media(max-width:500px){
+    .closebtn span{
+        display: none;
+    }
+}
+
+.hiring-img{
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+}
+.item-name{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.item-price{
+    color: white;
+}
+
+.claculatebtn{
+    width: 280px;
+    height: 8vh;
+    border: 0;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    transition: all, 0.5s;
+}
+
+.claculatebtn:hover{
+    background-color: white;
+    color: blue;
+
+}
+
+.submitbtn{
+    width: 280px;
+    height: 8vh;
+    border: 0;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    transition: all, 0.5s;
+}
+
+.submitbtn:hover{
+    background-color: white;
+    color: blue;
+
+}
+
+/*footer css*/
+.links i{
+    margin-left: 20px;
+    margin-top: 5px;
+    transition: all, 0.5s;
+}
+
+.links i:hover{
+    transform:scale(1.8);
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+.footerbtn{
+        margin-top: 10px;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        font-family: montserrat;
+        font-size: 20px;
+        color: white;
+        background-color: blue;
+        border-radius: 10px;
+        transition: all 0.5s;
+}

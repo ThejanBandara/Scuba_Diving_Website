@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body{
+    background:url(../RES/img/pexels-yulianto-poitier-1231365.jpg) rgba(0, 0, 0, 0.74);
+    background-blend-mode: multiply;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media(max-width:991px){
+    .sidebar{
+        background-color: rgba(0, 0, 0, 0.301);
+        backdrop-filter: blur(10px);
+    }
+    .nav-item{
+        padding-bottom: 20px;
+    }
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    letter-spacing: 0.7px;
+    padding: 0 10px;
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.623);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.heromain{
+    color: white;
+    font-size: 3em;
+}
+.herosub{
+    color: white;
+    font-size:1.3em;
+}
+.signup-btn {
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+   padding: 10px 10px 10px 10px;
+    width: 120px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .signup-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .signup-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .signup-btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .signup-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .arrows{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform:translate(-50% -50%) ;
+  }
+
+  .arrows span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    animation: scroll 2s infinite;
+  }
+  .arrows span:nth-child(2){
+    animation-delay: .2s;
+  }
+  .arrows span:nth-child(3){
+    animation-delay: .4s;
+  }
+
+  @keyframes scroll{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+
+/* cources section :) */
+.packages{
+  display: inline-block; 
+  padding-top: 60px ;
+  background-color: #8298a0;
+  padding-bottom: 200px;
+  margin-bottom:20px ;
+}
+.package-box{
+  margin-top: 20px;
+
+  padding-bottom: 20;
+  background-color: #0c1875;
+  border-radius: 20px;
+  box-shadow: 8px 8px 30px rgb(44, 149, 184);
+}
+.pack-topic{
+  padding-top: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.cards{
+  padding-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.cardcources{
+  height: 250px;
+  background-color: #007ea7;
+  color: white;
+  transition: all 0.5s;
+}
+.cardcources:hover{
+  margin-top: -10px;
+
+}
+.card-title{
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.cardbodycources{
+justify-content: center;
+font-size: 20px;
+}
+.buttoncont{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.openpack {
+    margin-top: 60px;
+    width: 200px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+   padding: 10px 10px 10px 10px;
+   justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .openpack:hover{
+    background-color: #FFFFFF;
+  }
+  .openpack span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .openpack span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .openpack:hover span {
+    padding-right: 25px;
+    color: blue;
+    background-color: #FFFFFF;
+  }
+  
+  .openpack:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* Hiring Section*/
+
+.hiring{
+  height: 100vh;
+  display: inline-block;
+}
+.arrowL{
+position: absolute;
+margin-top: 25%;
+}
+.arrowR{
+  right: 0;
+  position: absolute;
+  margin-top: 23%;
+  padding-right: 10px;
+}
+
+
+.content-window-hiring{
+  position: relative;
+  margin-top: 60px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+.hiring-title{
+  color: white;
+  font-family: montserrat;
+  padding-bottom: 20px;
+}
+.owl-drag{
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.owl-dot{
+  visibility: hidden;
+}
+.cardhiring{
+  min-height: 380px;
+  height: auto;
+  margin-left: 10px;
+  border-radius: 15px;
+  transition:all, .5s ;
+}
+.hiring-img{
+  padding: 20px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.star {
+  color: blue;
+  font-size: 20px;
+}
+.hirebtn{
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  border: 0;
+  font-family: montserrat;
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.hirebtn:hover{
+  color: blue;
+  background-color: rgb(189, 189, 189);
+  font-weight: bold;
+}
+.openhire {
+  width: 200px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+ padding: 10px 10px 10px 10px;
+ justify-content: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.openhire:hover{
+
+  color: blue;
+  background-color: white;
+}
+
+buttoncont{
+  margin-bottom: 0px;
+}
+
+/*Marketplace section*/
+#marketplace{
+  margin-top: 200px;
+  padding-top: 70px;
+  background-color: black;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.window{
+  background-color: rgba(179, 179, 179, 0.26);
+  margin-top: 50px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  box-shadow: 8px 8px 30px rgb(44, 149, 184);
+}
+
+.store-topic{
+  color: white;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.store-subtopic{
+  color: white;
+  margin-bottom: 20px;
+}
+.store-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 450px;
+}
+.store-card-body{
+  margin-right: 0px;
+}
+.store-card-img-top{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: auto;
+  height: 300px;
+      padding: 20px;
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 20px;
+     
+}
+
+.buybtn{
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  font-family: montserrat;
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.buybtn:hover{
+  color: blue;
+  background-color: rgb(189, 189, 189);
+  font-weight: bold;
+}
+
+.store-button{
+  margin-top: 30px;
+}
+
+/*others section*/
+#other{
+  margin-top: 180px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.other-window{
+  background-color: #0c1875;
+  margin-top: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  box-shadow: 8px 8px 30px rgb(44, 149, 184);
+}
+.other-topic{
+  padding-top: 20px;
+  font-family: montserrat;
+  padding-bottom: 20px;
+}
+.other-cards{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.other-card-1{
+  transition: all ,0.5s;
+  border-radius: 20px;
+}
+.other-card-1:hover{
+  transform: scale(1.1);
+}
+.other-card-2{
+  margin-top: 40px;
+  transition: all ,0.5s;
+  border-radius: 20px;
+
+}
+.other-card-2:hover{
+  transform: scale(1.1);
+}
+.other-card-3{
+  margin-top: 80px;
+  transition: all ,0.5s;
+  border-radius: 20px;
+}
+.other-card-3:hover{
+  transform: scale(1.1);
+}
+.other-img{
+  border-radius: 20px;
+}
+.other-card-text{
+
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  
+}
+.otherbtn{
+  margin-top: 10px;
+  height: 50px;
+  border: 0;
+  font-family: montserrat;
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.otherbtn:hover{
+  color: blue;
+  background-color: rgb(189, 189, 189);
+  font-weight: bold;
+}
+
+.other-card-4{
+  margin-top: 30px;
+  transition: all ,0.5s;
+  border-radius: 20px;
+
+}
+.other-card-4:hover{
+  transform: scale(1.1);
+}
+
+.other-card-5{
+  margin-top: 30px;           
+  transition: all ,0.5s;
+  border-radius: 20px;
+
+}
+.other-card-5:hover{
+  transform: scale(1.1);
+}
+/*about us*/
+
+#aboutus{
+  height: fit-content;
+  padding-bottom: 100px;
+  padding-top: 150px;
+  background-color: black;
+}
+
+.about-box{
+  background-color: #0c1875;
+  padding: 20px 20px 20px 20px;
+  height:fit-content;
+  border-radius: 30px;
+  box-shadow: 8px 8px 30px rgb(44, 149, 184);
+}
+
+.about-topic{
+  font-family: montserrat, sans-serif;
+   color: white;
+   margin-top: 60px;
+   margin-bottom: 20px;
+}
+
+.about-body{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.about-text{
+  text-align: justify;
+  font-family: montserrat, sans-serif;
+  line-height: 35px;
+  color: white;
+}
+
+.about-text span{
+  color: lightblue;
+  font-weight: bold;
+}
+
+.articlesec{
+  height: 150px;
+  margin-top: 50px;
+  background-color: rgba(179, 179, 179, 0.26);
+}
+
+.openarticle{
+  color: white;
+  font-family: montserrat, sans-serif;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+
+.openarticle a{
+  text-decoration: none;
+  color: lightblue;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+
+/*footer css*/
+
+.links i{
+  margin-left: 20px;
+  margin-top: 5px;
+  transition: all, 0.5s;
+}
+
+.links i:hover{
+  transform:scale(1.8);
+  margin-right: 30px;
+  margin-left: 40px;
+}
+
+.footerbtn{
+      margin-top: 10px;
+      width: 200px;
+      height: 50px;
+      border: 0;
+      font-family: montserrat;
+      font-size: 20px;
+      color: white;
+      background-color: blue;
+      border-radius: 10px;
+      transition: all 0.5s;
+}

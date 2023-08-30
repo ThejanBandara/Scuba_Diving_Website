@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Scooba Life | Home</title>
+</head>
+<body class="vh-100 ">
+
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <!--Logo Text-->
+            <a class="navbar-brand fs-3" href="../HTML/Index.html">Scooba Life</a>
+            <!--Hamburger Button-->
+            <button class="navbar-toggler shadow-none border-0"
+             type="button" data-bs-toggle="offcanvas" 
+             data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" 
+              aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Side menu-->
+          <div class="sidebar offcanvas offcanvas-start" 
+          tabindex="-1" id="offcanvasNavbar" 
+          aria-labelledby="offcanvasNavbarLabel">
+                <!--Sidebar header-->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Scooba Life</h5>
+                    <!--close button-->
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+            <!--navbar items-->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-9 flex-grow-1 pe-3">
+                    <li class="nav-item">
+                  <a class="navlink nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                  <a class="nav-link" href="#cources">Packages</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                    <a class="nav-link" href="#hiring">Hiring</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#marketplace">Marketplace</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#other">Other</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                  </li>
+              </ul>
+              
+              <!--login / sign up-->
+              <div class="d-flex  flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                <button onclick="openLogin();" class="signup-btn"><span>Sign up  </span></button>
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+        <section id="home" class="hero">
+            <h1 class="heromain">Scooba life</h1>
+            <h1 class="herosub"> Your Trusted Diving partner</h1>
+              <a href="#cources">
+              <div class="arrows">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div></a>
+
+        </section>
+
+
+    <section id="cources">
+      <div class="container-fluid packages">
+        <div class="container package-box">
+          <h1 class="fw-bold sec-topic pack-topic">Our Packages</h1>
+
+          <div class="row g-4 cards">
+
+            <div class="col-12 col-md-6 col-lg-4 cardc">
+              <div class="card cardcources">
+                <h2 class="card-title">Beginner</h2>
+                <div class="card-body cardbodycources">
+                  <ul>
+                    <li >2 x recreational courses</li>
+                    <li >2 x open water diving sessions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 cardc">
+               <div class="card cardcources">
+                <h2 class="card-title">Intermediate</h2>
+                <div class="card-body cardbodycources">
+                  <ul >
+                    <li >2 x specialist courses</li>
+                    <li >4 x open water diving sessions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 cardc">
+              <div class="card cardcources">
+                <h2 class="card-title">Advanced</h2>
+                <div class="card-body cardbodycources">
+                  <ul >
+                    <li >1 x instructor training course</li>
+                    <li >2 x skills development workshops</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="buttoncont"><button class="openpack" onclick="opencources();" ><span>See all Packages</span></button></div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hiring">
+      <div class="container-fluid hiring">
+
+        <div class="content-window-hiring">
+          <h1 class="text-center hiring-title ">Hiring</h1>
+          <h3 class="text-center hiring-title ">Hire the Best scuba diving equipments..</h3>
+          <i class="fa-solid fa-chevron-left fa-fade fa-2xl arrowL" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-chevron-right fa-fade fa-2xl arrowR" style="color: #ffffff;"></i>
+           <div class="owl-carousel owl-hiring">
+
+             <div class="card cardhiring">
+               <div class="card-body">
+                 <img src="../RES/img/New folder/scuba mask.jpg" alt="" class="card-img-top hiring-img">
+                 <h3>Scuba Mask</h3>
+                
+                 <div class="stars">
+                    <strong class="star">&star;</strong>
+                    <strong class="star">&star;</strong>
+                    <strong class="star">&star;</strong>
+                    <strong class="star">&star;</strong>
+                    <strong class="star">&star;</strong>
+                  </div>
+                  <button id="P1" class="hirebtn" onclick="openhire('P1');">Hire</button>
+             </div>  
+            </div>
+
+            <div class="card cardhiring">
+              <div class="card-body">
+                <img src="../RES/img/New folder/divelight.jpeg" alt="" class="card-img-top hiring-img">
+                <h3>Dive Light</h3>
+                <div class="stars">
+                   <strong class="star">&star;</strong>
+                   <strong class="star">&star;</strong>
+                   <strong class="star">&star;</strong>
+                   <strong class="star">&star;</strong>
+                   <strong class="star">&star;</strong>
+                 </div>
+                 <button id="P2" class="hirebtn" onclick="openhire('P2');">Hire</button>
+            </div>  
+           </div>
+
+           <div class="card cardhiring">
+            <div class="card-body">
+              <img src="../RES/img/New folder/divecomputer.jpg" alt="" class="card-img-top hiring-img">
+              <h4>Dive Computer</h4>
+
+              <div class="stars">
+                 <strong class="star">&star;</strong>
+                 <strong class="star">&star;</strong>
+                 <strong class="star">&star;</strong>
+                 <strong class="star">&star;</strong>
+                 <strong class="star">&star;</strong>
+               </div>
+
+               <button id="P3" class="hirebtn" onclick="openhire('P3');">Hire</button>
+          </div>  
+         </div>
+
+         <div class="card cardhiring">
+          <div class="card-body">
+            <img src="../RES/img/New folder/finsandbooties.jpg" alt="" class="card-img-top hiring-img">
+            <h4>Fins and Booties</h4>
+
+            <div class="stars">
+              <strong class="star">&star;</strong>
+              <strong class="star">&star;</strong>
+              <strong class="star">&star;</strong>
+              <strong class="star">&star;</strong>
+              <strong class="star">&star;</strong>
+             </div>
+
+             <button id="P4" class="hirebtn" onclick="openhire('P4');">Hire</button>
+        </div>  
+       </div>
+
+       <div class="card cardhiring">
+        <div class="card-body">
+          <img src="../RES/img/New folder/surface marker.jpg" alt="" class="card-img-top hiring-img">
+          <h4>surface Marker</h4>
+
+          <div class="stars">
+            <strong class="star">&star;</strong>
+            <strong class="star">&star;</strong>
+            <strong class="star">&star;</strong>
+            <strong class="star">&star;</strong>
+            <strong class="star">&star;</strong>
+           </div>
+           <button id="P5" class="hirebtn" onclick="openhire('P5');">Hire</button>
+      </div>  
+     </div>
+
+     <div class="card cardhiring">
+      <div class="card-body">
+        <img src="../RES/img/New folder/scubaknife.jpg" alt="" class="card-img-top hiring-img">
+        <h3>Scuba Knife</h3>
+
+        <div class="stars">
+          <strong class="star">&star;</strong>
+          <strong class="star">&star;</strong>
+          <strong class="star">&star;</strong>
+          <strong class="star">&star;</strong>
+          <strong class="star">&star;</strong>
+         </div>
+         <button id="P6" class="hirebtn" onclick="openhire('P6');">Hire</button>
+    </div>  
+   </div>
+          </div>
+          
+        </div>
+        </div>
+    </section>
+
+    <section id="marketplace">
+      <div class="container window">
+        <h1 class="store-topic text-center">Scuba Marketplace</h1>
+        <h3 class="store-subtopic text-center">Buy World Class Diving Equipments from us..</h3>
+        <h3 class="store-subtopic text-center">Featured Products</h3>
+          <div class="row g-3">
+  
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card store-card">
+                      <img src="../RES/img/New folder/divecomputer.jpg" class="card-img-top store-card-img-top" >
+                      <div class="card-body text-begin store-card-body">
+                        <h3 class="item-name">Dive Computer</h3>
+                        <h2>150$</h2>
+                        <div class="stars">
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                         </div>
+                         <button id="openwindowbtn" class="buybtn" onclick="openstore();">Buy now</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card store-card">
+                      <img src="../RES/img/New folder/divelight.jpeg" class="card-img-top store-card-img-top">
+                      <div class="card-body store-card-body">
+                        <h3 class="item-name">Dive Light</h3>
+                        <h2>80$</h2>
+                        <div class="stars">
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                         </div>
+                         <button id="P6" class="buybtn" onclick="openstore();">Buy now</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card store-card">
+                      <img src="../RES/img/New folder/scuba mask.jpg" class="card-img-top store-card-img-top">
+                      <div class="card-body store-card-body">
+                        <h3 class="item-name">Scuba Mask</h3>
+                        <h2>120$</h2>
+                        <div class="stars">
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                          <strong class="star">&star;</strong>
+                         </div>
+                         <button id="P6" class="buybtn" onclick="openstore()">Buy now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="d-flex flex-column align-items-center justify-content-center store-button">
+            <button class="openhire" onclick="openstore();">Go to Marketplace</button>
+          </div>
+          
+      </div>
+    </section>
+
+    <section id="other">
+      <div class="container-fluid" style="height: 20px;"></div>
+      <div class="container-fluid">
+        <div class="other-window">
+          <h1 class="other-topic text-center text-white">Our Other Services</h1>
+          <div class="row ">
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="card d-flex flex-column other-card-1">
+                <img src="../RES/img/servicing.png" alt="" class="card-img-top other-img">
+                <div class="card-img-overlay other-card-text">
+                  <button class="otherbtn" onclick="openother1();">Send Your Equipments</button>
+                  <h3 class="topic">Scuba equipment <br> Servicing</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="card d-flex flex-column other-card-2">
+              <img src="../RES/img/leadership.png "alt="" class="card-img-top other-img">
+              <div class="card-img-overlay other-card-text">
+                <button class="otherbtn" onclick="openother2();">Book Your Seat</button>
+                <h3 class="topic">Leadership development <br> programmes</h3>
+              </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="card d-flex flex-column other-card-3">
+                <img src="../RES/img/diver i training.png" alt="" class="card-img-top other-img">
+                <div class="card-img-overlay other-card-text">
+                  <button class="otherbtn" onclick="openother3();">Get trained</button>
+                  <h3 class="topic">Diving instructor training</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row2">
+            <div class="col-12 col-lg-6 col-md-6">
+              <div class="card d-flex flex-column other-card-4">
+                <img src="../RES/img/basement-986308_1920.jpg.png" alt="" class="card-img-top other-img">
+                <div class="card-img-overlay other-card-text">
+                  <button class="otherbtn" onclick="openother4();">Book now!</button>
+                  <h3 class="topic">liveabord & hotel based <br> Diving Holidays</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-6">
+              <div class="card d-flex flex-column other-card-5">
+              <img src="../RES/img/diver-549369_1280.jpg.png"alt="" class="card-img-top other-img">
+              <div class="card-img-overlay other-card-text">
+                <button class="otherbtn" onclick="openother5();">Book Your slot</button>
+                <h3 class="topic">Open water <br> Diving sessions</h3>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus">
+        <div class="container about-box d-flex flex-column d-flex flex-column align-items-center">
+          <h1 class="about-topic"> About US..</h1>
+          <div class="d-flex flex-column about-body">
+            <p class="about-text">"Embark on a <span>transformative</span> underwater journey with Scooba Life! Dive into a world of scuba <span>exploration</span>, from <span>beginner</span> courses to <span>advanced</span> adventures. <span>Discover</span> the ocean's wonders, <span>explore</span> breathtaking destinations, and join our <span>vibrant</span> diving community. With a modern website at your <span>fingertips</span>, access valuable <span>insights</span>, connect with <span>experts</span>, and unleash your aquatic passion. Let Scooba Life be your guide to <span>unparalleled</span> underwater experiences and <span>unforgettable</span> memories."</p>
+          </div>
+        </div>
+        <div class="container-fluid articlesec d-flex flex-column align-items-center justify-content-center">
+          <h3 class="openarticle text-center">Dive into the very basics of scuba before diving! <br> Read our Article <a href="articlebasics.html">Here <span>>></span></a></h3>
+        </div>
+    </section>
+    
+
+    <script>
+       $('.owl-carousel').owlCarousel({
+          loop:true,
+           margin:10,
+           autoplay:true,
+           autoplayTimeout:2000,
+           dots: false,
+            autoplayHoverPause:true,
+           responsiveClass:true,
+           responsive:{
+            0:{
+              items:1,
+              nav:true
+            },
+            600:{
+              items:2,
+             nav:false
+             },
+            1000:{
+              items:3,
+              nav:true,
+            }
+       }
+  })
+
+
+        function openLogin(){
+          document.location.href='../HTML/login.html';
+        }
+        function opencources(){
+          document.location.href='../HTML/cources.html';
+        }
+        function openstore(){
+          document.location.href='../HTML/marketplace.html';
+        }
+        function openother1(){
+          document.location.href='other.html#servicing';
+        }
+        function openother2(){
+          document.location.href='other.html#leadership';
+        }
+        function openother3(){
+          document.location.href='other.html#training';
+        }
+        function openhire(idProduct){
+          localStorage.setItem("productcode",idProduct);
+          document.location.href='../HTML/hiring.html';
+          return false;
+        }
+    </script>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex flex-row justify-content-center text-white p-3 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div class="links d-flex flex-row">
+        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-google-plus-g" style="color: #f5f9ff;"></i>
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-threads" style="color: #ffffff;"></i>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-white text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h3 class="fw-bold mb-4">Scooba Life</h3>
+            <p>
+              stick with us to explore deeps of the ocean and spend an adventurous holiday !..
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Our services
+            </h6>
+            <p>
+              <a href="other.html#servicing" class="text-reset">Repairing service</a>
+            </p>
+            <p>
+              <a href="marketplace.html" class="text-reset">scuba marketplace</a>
+            </p>
+            <p>
+              <a href="Index.html#hiring" class="text-reset">Scuba Hiring</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> no.0, road name, city.</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              someone@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <form action="">
+                <div class="form-floating mb-3">
+                  <input style="background-color: rgb(61, 61, 61);"  type="email" class="form-control form-control-sm" placeholder="email" id="email" required>
+                  <label for="email"> Your Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input style="background-color: rgb(61, 61, 61);" type="text" class="form-control form-control-sm" placeholder="massage" id="massage" >
+                  <label for="massage"> Your massage</label>
+                </div>
+  
+                <button class="footerbtn">Send Massage</button>
+  
+              </form>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-white p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Scooba Life. All Rights Reserved 
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
